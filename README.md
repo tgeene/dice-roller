@@ -6,7 +6,7 @@ Console Example:
 
     DICE ROLLER
     -----
-    Available commands: [equation]|reroll|exit]
+    Available commands: [equation|reroll|exit]
     Equation Format: #d#[+#d#|#[...]]
 
     Dice to roll: 1d20+3

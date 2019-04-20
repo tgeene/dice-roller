@@ -3,15 +3,13 @@ import random
 
 print("\nDICE ROLLER")
 print("-----")
-print("Available commands: [dice equation]|reroll|exit")
+print("Available commands: [equation]|reroll|exit")
+print("Equation Format: #d#[+#d#|# [...]]")
 
 user_input = ''
 last_roll = ''
 
 while user_input != 'exit':
-    output = 0
-    processed = 0
-    
     if user_input == 'reroll':
         if last_roll:
             user_input = last_roll
@@ -19,11 +17,13 @@ while user_input != 'exit':
             user_input = ''
             print('nothing to reroll')
     
-    if user_input:
+    if re.search(r'(\d+d\d+)((\+((\d+d\d+)|\d+))*)?', user_input):
         last_roll = user_input
         
+        output = 0
+        processed = 0
+        
         sections = re.split("\+|\-", user_input)
-       
         for section in sections:
             if processed:
                 evaluation = user_input[processed]
@@ -47,5 +47,8 @@ while user_input != 'exit':
                 output = output - section_val
             
         print(output)
+    elif user_input != '':
+        print("Invalid Command. Please Try Again.")
     
     user_input = input('\nDice to roll: ')
+	user_input = user_input.replace(" ", "")

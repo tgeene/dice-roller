@@ -6,10 +6,14 @@ Console Example:
 
     DICE ROLLER
     -----
-    Available commands: [dice equation]|reroll|exit
+    Available commands: [dice equation]|reroll|exit]
+    Equation Format: #d#[+#d#|#[...]]
 
     Dice to roll: 1d20+3
     20
+    
+    Dice to roll: 1d
+    Invalid Command. Please Try Again.
 
     Dice to roll: 2d6+1d4+5
     11

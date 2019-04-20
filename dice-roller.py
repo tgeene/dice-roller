@@ -3,7 +3,7 @@ import random
 
 print("\nDICE ROLLER")
 print("-----")
-print("Available commands: [equation]|reroll|exit]")
+print("Available commands: [equation|reroll|exit]")
 print("Equation Format: #d#[+#d#|#[...]]")
 
 user_input = ''

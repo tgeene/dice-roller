@@ -10,16 +10,26 @@ Console Example:
     Equation Format: #d#[+#d#|#[...]]
 
     Dice to roll: 1d20+3
-    20
+	d20: 17
+	--
+    Total: 20
     
     Dice to roll: 1d
     Invalid Command. Please Try Again.
 
     Dice to roll: 2d6+1d4+5
-    11
+	d6: 1
+	d6: 3
+	d4: 2
+	--
+    Total: 11
 
     Dice to roll: reroll
-    15
+	d6: 5
+	d6: 2
+	d4: 3
+	--
+    Total: 15
 
     Dice to roll: exit
 

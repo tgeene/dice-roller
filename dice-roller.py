@@ -37,7 +37,7 @@ while user_input != 'exit':
 			section_val = 0
 			if len(parts) == 2:
 				for n in range(0, int(parts[0])):
-					dice_roll = random.randrange(1, int(parts[1]))
+					dice_roll = random.randrange(1, int(parts[1])+1)
 					print(f"d{parts[1]}: {dice_roll}")
 					section_val = section_val + dice_roll
 			else:
